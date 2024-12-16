@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM - Version Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CRM - Suivi des Clients et Tâches</h1>
+    </header>
+
+    <section class="dashboard">
+        <h2>Tableau de Bord</h2>
+        <div class="clients">
+            <h3>Clients</h3>
+            <ul id="client-list">
+                <!-- Liste des clients ajoutés ici -->
+            </ul>
+        </div>
+        <div class="tasks">
+            <h3>Tâches</h3>
+            <ul id="task-list">
+                <!-- Liste des tâches ici -->
+            </ul>
+        </div>
+    </section>
+
+    <section class="add-client">
+        <h2>Ajouter un Client</h2>
+        <form id="add-client-form">
+            <input type="text" id="client-name" placeholder="Nom du client" required>
+            <input type="text" id="client-sector" placeholder="Secteur d'activité" required>
+            <input type="text" id="client-products" placeholder="Produits d'intérêt" required>
+            <input type="email" id="client-email" placeholder="Email" required>
+            <input type="tel" id="client-phone" placeholder="Téléphone" required>
+            <button type="submit">Ajouter Client</button>
+        </form>
+    </section>
+
+    <section class="tasks">
+        <h2>Ajouter une Tâche</h2>
+        <form id="add-task-form">
+            <input type="text" id="task-client" placeholder="Nom du client pour la tâche" required>
+            <input type="text" id="task-description" placeholder="Description de la tâche" required>
+            <input type="date" id="task-due-date" required>
+            <button type="submit">Ajouter Tâche</button>
+        </form>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
